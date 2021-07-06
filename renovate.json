@@ -1,0 +1,12 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:base",
+              "docker:enableMajor",
+              ":prHourlyLimitNone"
+             ],
+  "enabledManagers": ["git-submodules", "pre-commit"],
+  "git-submodules": {
+    "enabled": true
+  },
+  "cloneSubmodules": false
+}
